@@ -1,5 +1,5 @@
 Student name: Alex Tang
 Student number: 713481
 Student class: IT1B
-GitHub Repository: your github repository URL
-GitHub Pages URL: your github pages URL
+GitHub Repository: https://github.com/713481/ProjectTerm1
+GitHub Pages URL: https://713481.github.io/ProjectTerm1/index.html
