@@ -17,56 +17,60 @@
                 <img class="imglogo" src="images/Logo.png" alt="Logo" title="Logo">
             </a>
         </section>
-    <nav class="topnav">
-        <ul><a href="index.html">Homepage</a></ul>
-        <ul><a href="activities.html">Activities</a></ul>
-        <ul><a href="publictransport.html">Public Transport</a></ul>
-        <ul><a href="zaanseschans.html">Zaanse Schans</a></ul>
-        <ul><a href="history.html">History</a></ul>
-        <ul class="active"><a href="contact.html" class="active">Contact</a></ul>
-    </nav>
+        <nav class="topnav">
+            <menu>
+            <li><a href="index.html">Homepage</a></li>
+            <li><a href="activities.html">Activities</a></li>
+            <li><a href="publictransport.html">Public Transport</a></li>
+            <li><a href="zaanseschans.html">Zaanse Schans</a></li>
+            <li><a href="history.html">History</a></li>
+            <li class="active"><a href="contact.html" class="active">Contact</a></li>
+        </menu>
+        </nav>
 </header>
     <section class="flexbox-item">
         <h1>Contact</h1>
         <p class="leftside">
         Fill in the contact form below to contact us! Make sure the information is correct before submitting! Thank you for vising our webpage.
         </p>
-            <form class="contactformcontainer" action="contactconfirm.html" method="">
+            <form class="contactformcontainer" action="contactconfirm.html">
+                <fieldset>
                 <legend class="contactformtitle"><strong>Contact form</strong></legend>
-                <label class="formtitle" for="title">Select title*</label>
+                <p class="formtitle">Select title*</p>
                 <table class="contactformtable">
                     <tr>
                         <td>Mr</td>
-                        <td><input type="radio" name="title" value="Mr"></td>
+                        <td><input type="radio" id="Mr" name="title" value="Mr"></td>
                     </tr>
                     <tr>
                         <td>Mrs</td>
-                        <td><input type="radio" name="title" value="Mrs"></td>
+                        <td><input type="radio" id="Mrs" name="title" value="Mrs"></td>
                     </tr>
                     <tr>
                         <td>Other</td>
-                        <td><input type="radio" name="title" value="Other"></td>
+                        <td><input type="radio" id="Other" name="title" value="Other"></td>
                     </tr>
                 </table>
                 <section class="inputboxes">
                     <section class="contactformtable">
-                        <label class="formleft" for="name">name*</label><br>
-                        <input type="text" name="name" placeholder="John Doe"><br><br>
+                        <label class="formleft" for="name">name*</label>
+                        <input type="text" id="name" name="name" placeholder="John Doe">
                     </section>
                     <section class="contactformtable">
-                    <label class="formleft" for="email">email*</label><br>
-                    <input type="email" name="email" placeholder="johndoe@gmail.com"><br><br>
+                    <label class="formleft" for="email">email*</label>
+                    <input type="email" id="email" name="email" placeholder="johndoe@gmail.com">
                     </section>
                     <section class="contactformtable">
-                        <label class="formleft" for="phonenumber">phonenumber</label><br>
-                        <input type="tel" name="phonenumber" placeholder="+316123456789"><br><br>
+                        <label class="formleft" for="phonenumber">phonenumber</label>
+                        <input type="tel" id="phonenumber" name="phonenumber" placeholder="+316123456789">
                         </section>
                     <section class="contactformtable">
-                    <label class="formleft" for="text">Text here!</label><br>
-                    <textarea class="textbox" type="text" name="message" placeholder="Enter your question/request here!"></textarea>
+                    <label class="formleft" for="text">Text here!</label>
+                    <textarea class="textbox" id="text" name="message" placeholder="Enter your question/request here!"></textarea>
                     </section>
                 </section>
-                <input class="submitbutton" type="submit" value="submit"></button>
+                <input class="submitbutton" type="submit" value="submit">
+            </fieldset>
             </form>   
     </section>
     <section class="rightside">

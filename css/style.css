@@ -6,11 +6,20 @@ body {
   padding: 0%;
   margin: 0%;
 }
+.cookie{
+
+}
+ul > li{
+  font-size: 18px;
+}
+p::first-letter{
+  font-size: 1.5em;
+}
 a:hover{
-  color: red;
+  color: green;
 }
 a:active{
-  color:purple;
+  color:red;
 }
 .bodycontainer {
   display: flex;
@@ -30,6 +39,10 @@ header {
   background-color: #2E5438;
 
 }
+menu{
+  padding:0%;
+  margin:0%;
+}
 .Logo img{
   display: flex;
   flex-direction: column;
@@ -41,14 +54,14 @@ header {
   width: 100%;
 }
   /* Style the links inside the navigation bar */
-  .topnav ul {
+  .topnav li {
     float: left;
     display: flex;
     color: #000;
     background-color: white;  
     justify-content: center;
     align-items: center;
-    width: 16.666%;
+    width: 16.6666666667%;
     height: 5em;
     padding: 0%;
     margin: 0%;
@@ -59,21 +72,21 @@ header {
   /* Change the color of links on hover */
   .topnav a{
     display: block;
-    padding-top: 2em;
-    padding-bottom: 2em;
-    padding-left: 4.3em;
-    padding-right: 4.3em;
+    width: 100%;
+    height: 100%;
     color: black;
     text-decoration:solid;
     white-space: nowrap;
+    text-align: center;
+    line-height: 5em;
   }
-  .topnav ul:hover {
+  .topnav li:hover {
     background-color: #DCFFCD;
     color: #000;
   }
   
   /* Add a color to the active/current link */
-  .topnav ul.active {
+  .topnav li.active {
     background-color: #2E5438;
   }
   .topnav a.active {
@@ -97,21 +110,20 @@ header {
     font-size: 20px;
     border-radius: 12px;
     color: white;
-    width:20%;
     height: 5em;
     justify-content: center;
     align-items: center;
     border: 0;
     text-decoration: solid;
+    position:relative;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    word-wrap: none;
+
   }
-.Calltoaction a{
-  display: block;
-  padding-top: 1.4em;
-  padding-bottom: 1.4em;
-  padding-left: 6.5em;
-  padding-right: 6.5em;
-  color: white;
-  text-decoration: solid;
+.flexbox-item a{
+  margin-left: 15em;
+  width: 30%;
 }
 .leftside{
   padding-left: 15em;
@@ -184,6 +196,9 @@ header {
 .flexbox-item h1{
   padding-left: 10em;
 }
+.flexbox-item h2{
+  padding-left: 25%;
+}
 .flexbox-item h3{
   padding-left: 12.7em;
 }
@@ -196,12 +211,7 @@ header {
   display: flex;
   margin-left: 15em;
 }
-.flexbox-item-2 {
-  width: 50%;
-  margin-top: 2em;
-  margin-left: 12em;
-  
-}
+
 .homepagetext{
   letter-spacing: 0.1em;
   line-height: 1em;
@@ -209,9 +219,8 @@ header {
   word-spacing: 0.01em;
   width: 50%;
   display: flex;
-  margin-top: 5em;
   margin-left: 15em;
-  margin-bottom: 5em;
+  position: static;
 }
 
 .rightside {
@@ -237,7 +246,6 @@ header {
     border-style: solid;
     border-width: 1px;
     border-color: black;
-    background-color: white;
     font-family: Arial, Helvetica, sans-serif;
     width: 10em;
     height: 3em;
@@ -251,6 +259,12 @@ th {
     color: #fff;
     text-align: left;
     height: 3em;
+}
+.Timetable tr:nth-child(even){
+  background-color: #CFF;
+}
+.Timetable tr:nth-child(odd){
+  background-color: #fff;
 }
 table{
   border-spacing: 0;
@@ -354,8 +368,7 @@ section .contactformcontainer{
   margin-left: 15em;
 }
 .contactformtitle{
-  display: flex;
-  justify-content: center;
+  text-align: center;
   font-size: 20px;
   padding-top: 2em;
   padding-bottom: 2em;
@@ -363,7 +376,6 @@ section .contactformcontainer{
 }
 .formtitle{
   margin-left: 4em;
-  margin-bottom: 4em;
   font-weight: bold;
 }
 .formleft{
@@ -373,11 +385,14 @@ section .contactformcontainer{
 .contactformtable{
   margin-left: 4em;
   margin-bottom: 0.5em;
+  display: flex;
+  flex-direction: column;
+  width: 15em;
+  
 }
 .textbox{
   width: 20em;
   height:10em;
-  justify-content: baseline;
   resize: none;
 }
 .submitbutton{
@@ -419,6 +434,10 @@ section .contactformcontainer{
   margin-top: 3em;
   width: 60%;
 }
+fieldset{
+  border-color: #A0DDD0;
+  border-style: none;
+}
 }
 /*Use a media query to add a breakpoint at 720px*/
 @media screen and (max-width: 768px){
@@ -434,17 +453,26 @@ section .flexbox-item{
   margin-left: 0%;
   padding-left: 0%;
 }
+.flexbox-item a{
+  margin-left: 32.5%;
+}
 .flexbox-item h1{
-  padding-left: 0%;
+  padding-left:0%;
+  width: 100%;
   text-align: center;
 }
-.Calltoaction{
-  margin-left: 25%;
-  
+article h3{
+  text-align: center;
+}
+.flexbox-item h2{
+  padding-left: 10%;
 }
 .flexbox-end{
   margin-top: 2em;;
   margin-bottom: 0%;
+  margin-left: 25%;
+}
+.homepagetext{
   margin-left: 25%;
 }
 .rightside{
@@ -464,9 +492,9 @@ section .flexbox-item{
   }
   .topnav a{
     width: 100%;
-    padding-top: 1em;
-    padding-bottom: 1em;
     text-align: center;
+    font-size: 16px;
+    line-height: 6em;
   }
   section .img{
     padding-left: 0px;
@@ -500,6 +528,9 @@ footer, .footerul, .footerul1{
   white-space: nowrap;
 }
 .footerul1{
+  padding-left: 5%;
+}
+.copyright{
   padding-left: 5%;
 }
 /*---------------------------------------*/
@@ -542,7 +573,7 @@ footer, .footerul, .footerul1{
   padding-left: 25%;
 }
 /*---------------------------------------*/
-/*History*/
+/*History Mobile*/
 .historyimages{
   padding-left: 25%;
   width: 50%;
@@ -556,12 +587,15 @@ footer, .footerul, .footerul1{
 .historyimagetsar{
   display: flex;
   float: left;
-  padding-left: 20%;
-  width: 50%;
+  padding-left: 25%;
+  width: 62%;
   padding-bottom: 1em;
 }
+.figcaptionhistory{
+  padding-left: 25%;
+}
 /*---------------------------------------*/
-/*Contact*/
+/*Contact Mobile*/
 section .contactformcontainer{
 margin-left: 25%;
 margin-top: 3em;
@@ -579,6 +613,11 @@ margin-bottom: 3em;
 .containerreturnbutton{
   margin-top: 1em;
 }
-
+.formtitle{
+  margin-left: 2em;
+}
+.contactformtable{
+  margin-left: 2em;
+}
 
 }
