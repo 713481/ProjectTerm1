@@ -6,6 +6,12 @@ body {
   padding: 0%;
   margin: 0%;
 }
+a:hover{
+  color: red;
+}
+a:active{
+  color:purple;
+}
 .bodycontainer {
   display: flex;
 }
@@ -326,12 +332,12 @@ table{
 .figurehistory{
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 80%;
 }
 .historyimagetsar{
   display: flex;
   float: left;
-  width:65%;
+  width:82%;
   padding-left: 2.5em;
   padding-bottom: 5em;
 }
@@ -489,14 +495,11 @@ section .flexbox-item{
     display: flex;
     justify-content: center;
   }
-footer{
+footer, .footerul, .footerul1{
   font-size: 16px;
-}
-.footerul{
   white-space: nowrap;
 }
 .footerul1{
-  white-space: nowrap;
   padding-left: 5%;
 }
 /*---------------------------------------*/
